@@ -20,10 +20,12 @@ int main(int argc, char* argv[])
         std::cout << "false\n";
     }
   }
+
   catch (const std::invalid_argument&){
     std::cout << "No correct input, shame on you!\n";
     return 1;
   }
+
   catch (const std::out_of_range&){
     std::cout << "No correct input, shame on you!\n";
     return 1;
